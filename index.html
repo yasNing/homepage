@@ -96,7 +96,10 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#research_projects">Research Project</a>
+            <a class="nav-link js-scroll-trigger" href="#research_projects">Research Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#publications">Publications & Manuscripts</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#education">Education</a>
@@ -122,7 +125,7 @@
           </h1>
           <p class="mb-3">
           <span style="font-weight: bold;">
-              Yansong is a first-year Ph.D. student in <a href="https://www.hkust-gz.edu.cn/">The Hong Kong University of Science and Technology (Guangzhou)</a>, <a href="https://ait.hkust-gz.edu.cn/">Artificial Intelligence Thrust</a>. He continued his postgraduate studies after completing an M.Phil. degree at HKUST(GZ) under the supervision of <a href="https://raymondhliu.github.io/">Prof. Hao Liu</a> and <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en">Prof. Hui Xiong</a>. 
+              Yansong is a first-year Ph.D. student in Artificial Intelligence Thrust at <a href="https://www.hkust-gz.edu.cn/">The Hong Kong University of Science and Technology</a>, Guangzhou Campus. He continued his postgraduate studies after completing an M.Phil. degree at HKUST(GZ) under the supervision of <a href="https://raymondhliu.github.io/">Prof. Hao Liu</a> and <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en">Prof. Hui Xiong</a>. 
               He interned at Didi Chuxing, working with L Lab.
               Prior to that, he obtained his Bachelor's degree in the School of Data Science at <a href="https://www.tyut.edu.cn/">TYUT</a>.
               During undergraduate studies, he also interned at Guangzhou HKUST FYTRI, collaborating with Alibaba Cloud Intelligence Group.
@@ -130,7 +133,7 @@
           </span>
             <p class="mb-3">
             <span style="font-weight: bold;">
-                His recent research focuses on reasoning LLMs and agents. Specifically, his research goal is to understand and improve the "agentic reasoning capability" of LLMs (dynamically interact with external tools/resources in multi-step reasoning process), guaranteeing their practical applicability in real-world deployment, e.g., optimizing agent to satisfy user's traveling objectives via multiturn interaction.</p>
+                His recent research focuses on reasoning LLMs and agent. Specifically, his research goal is to understand and improve the "agentic reasoning capability" of LLMs (automatically plan, execute external tools, and reflect on tool responses to explore, verify, and refine intermediate actions in multi-step reasoning process), guaranteeing their practical applicability in real-world deployment, e.g., optimizing agent to satisfy user's objectives via multiturn interaction.</p>
           </span>
             <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
@@ -180,21 +183,88 @@
                   </span>
           </div>
           <div>
-            <p class="mb-3">
-            <span style="font-weight: bold;">
-            [Jul 2025] Two papers were accepted to <a href="https://yasning.github.io/homepage/">ECML-PKDD</a> and <a href="https://yasning.github.io/homepage/">ECAI</a>, about <a href="https://arxiv.org/pdf/2306.10351">Federated Graph Learning</a> and <a href="https://yasning.github.io/homepage/">Federated Fine-tuning</a>! Congrates to my co-author!<br>
-            [May 2025] Thrilled to release <a href="https://arxiv.org/pdf/2505.11827">Long⊗Short</a>, an efficient reasoning framework that enables two LLMs to collaboratively solve the problem. Feel free to use our released <a href="https://huggingface.co/datasets/yasNing/OpenMath-ThoughtChunk1.8K">OpenMath-ThoughtChunk1.8K</a> on Hugging Face for thought-level reasoning analysis!!</a><br>
-            [May 2025] <a href="https://arxiv.org/pdf/2503.04768">DiMA</a> is accepted to <a href="https://kdd2025.kdd.org/">KDD 2025</a>!!</a><br>
-            [April 2025] Pleasure to give a talk about LLM-based UrbanKG Construction in <a href="https://www.gsc.org.cn/gsc/xueshuDetail.html?id=54&contentId=2027">The Geographical Society of China 2025 Academic Annual Meeting</a> at Zhejiang University</a>!!</a><br> 
-            [Feb 2025] Thrilled to release <a href="https://arxiv.org/pdf/2503.04768">DiMA</a>, an LLM-powered ride-hailing assistant deployed on DiDi Chuxing. Thanks for the guidance and support from L Lab!!</a><br>
-            [Sep 2024] <a href="https://neurips.cc/virtual/2024/poster/95400">UrbanKGent</a> is accepted to <a href="https://neurips.cc/Conferences/2024">NeurIPS 2024</a>!<br>
-            [Dec 2023] Pleasure to join <a href="https://en.wikipedia.org/wiki/DiDi">DiDi Chuxing</a> as a research intern, collaborating with the L Lab on the LLM pre-training, post-training and LLM-based ride-hailing assistant deployment.<br>
-            [Sep 2023] <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/c4a30a4dd840cfeff30ba4d2661ff097-Abstract-Datasets_and_Benchmarks.html">UUKG</a> is accepted to <a href="https://neurips.cc/Conferences/2023">NeurIPS 2023</a>!<br>
-            [Aug 2022] Pleasure to start the summer internship at the <a href="https://www.fytri.cn/">Guangzhou HKUST FYTRI</a>, collaborating with <a href="https://www.linkedin.com/company/cloudintelligencegroup/">Alibaba Cloud Intelligence Group</a> on the projected related to urban knowledge graph.<br>
+            <div class="news-section">
+    <p class="mb-3">
+        <span style="font-weight: bold;">
+            <!-- 前5条消息 - 始终显示 -->
+            <span class="always-visible">
+                [Sep 2025] Pleasure to release <a href="https://arxiv.org/pdf/2509.21842">DeepTravel</a>, an end-to-end agentic reinforcement learning framework for building autonomous travel agent!!<br>
+                [Jul 2025] Two papers were accepted to <a href="https://yasning.github.io/homepage/">ECML-PKDD</a> and <a href="https://yasning.github.io/homepage/">ECAI</a>, about <a href="https://arxiv.org/pdf/2306.10351">Federated Graph Learning</a> and <a href="https://yasning.github.io/homepage/">Federated Fine-tuning</a>! Congrates to my co-author!<br>
+                [May 2025] Thrilled to release <a href="https://arxiv.org/pdf/2505.11827">Long⊗Short</a>, an efficient reasoning framework that enables two LLMs to collaboratively solve the problem. Feel free to use our released <a href="https://huggingface.co/datasets/yasNing/OpenMath-ThoughtChunk1.8K">OpenMath-ThoughtChunk1.8K</a> on Hugging Face for thought-level reasoning analysis!!</a><br>
+                [May 2025] <a href="https://arxiv.org/pdf/2503.04768">DiMA</a> is accepted to <a href="https://kdd2025.kdd.org/">KDD 2025</a>!!</a><br>
             </span>
-            </p>
-          </div>
-          </div>
+            
+            <!-- 其余消息 - 可折叠 -->
+            <span id="collapsible-news" class="collapsible-content">
+                [April 2025] Pleasure to give a talk about LLM-based UrbanKG Construction in <a href="https://www.gsc.org.cn/gsc/xueshuDetail.html?id=54&contentId=2027">The Geographical Society of China 2025 Academic Annual Meeting</a> at Zhejiang University</a>!!</a><br>
+                [Feb 2025] Thrilled to release <a href="https://arxiv.org/pdf/2503.04768">DiMA</a>, an LLM-powered ride-hailing assistant deployed on DiDi Chuxing. Thanks for the guidance and support from L Lab!!</a><br>
+                [Sep 2024] <a href="https://neurips.cc/virtual/2024/poster/95400">UrbanKGent</a> is accepted to <a href="https://neurips.cc/Conferences/2024">NeurIPS 2024</a>!<br>
+                [Dec 2023] Pleasure to join <a href="https://en.wikipedia.org/wiki/DiDi">DiDi Chuxing</a> as a research intern, collaborating with the L Lab on the LLM pre-training, post-training and LLM-based ride-hailing assistant deployment.<br>
+                [Sep 2023] <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/c4a30a4dd840cfeff30ba4d2661ff097-Abstract-Datasets_and_Benchmarks.html">UUKG</a> is accepted to <a href="https://neurips.cc/Conferences/2023">NeurIPS 2023</a>!<br>
+                [Aug 2022] Pleasure to start the summer internship at the <a href="https://www.fytri.cn/">Guangzhou HKUST FYTRI</a>, collaborating with <a href="https://www.linkedin.com/company/cloudintelligencegroup/">Alibaba Cloud Intelligence Group</a> on the projected related to urban knowledge graph.<br>
+            </span>
+        </span>
+    </p>
+    
+    <button id="toggle-btn" class="toggle-button" onclick="toggleNews()">
+        <span id="btn-text">Past News</span>
+        <span id="btn-icon">▼</span>
+    </button>
+</div>
+
+<style>
+.collapsible-content {
+    display: none;
+}
+
+.collapsible-content.expanded {
+    display: inline;
+}
+
+.toggle-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.toggle-button:hover {
+    background-color: #e0e0e0;
+}
+
+#btn-icon {
+    margin-left: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.toggle-button.expanded #btn-icon {
+    transform: rotate(180deg);
+}
+</style>
+
+<script>
+function toggleNews() {
+    const content = document.getElementById('collapsible-news');
+    const button = document.getElementById('toggle-btn');
+    const btnText = document.getElementById('btn-text');
+    
+    content.classList.toggle('expanded');
+    button.classList.toggle('expanded');
+    
+    if (content.classList.contains('expanded')) {
+        btnText.textContent = 'Past News';
+    } else {
+        btnText.textContent = 'Past News';
+    }
+}
+</script>
 </section>
 
 <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="research_projects">
@@ -203,9 +273,9 @@
           
 		    <!-- 添加分类按钮 -->
           <div class="category-buttons">
-            <button class="btn btn-primary active" data-category="llm-agent">LLM-powered Agent & Applications</button>
+            <button class="btn btn-primary active" data-category="llm-agent">LLM-powered Agent</button>
             <button class="btn btn-primary" data-category="llm-reasoning">LLM Reasoning</button>
-            <button class="btn btn-primary" data-category="graph-modeling">Graph Modeling and Representation</button>
+            <button class="btn btn-primary" data-category="graph-modeling">Knowledge Graph</button>
           </div>
 
 
@@ -230,8 +300,30 @@
       </span>
 </div>
 
-<!-- UrbanKGent Project -->
+<!-- DeepTravel Project -->
 <div class="resume-item d-flex flex-column flex-md-row mb-5 research-project" data-category="llm-agent">
+  <span class="d-none d-lg-block">
+        <div class="d-flex">
+        <img src="./img/DeepTravel.png" alt="Description of image" style="width: 40%; height: auto; margin-right: 20px;">
+        <div>
+            <p style="font-size: x-large;"><span style="font-weight: bold;">DeepTravel: An End-to-End Agentic Reinforcement Learning Framework for Autonomous Travel Planning Agents</span><br></p>
+            <p><span style="font-weight: bold;"><a href="arxiv.org">Preprint</a></span><br>
+            <span style="font-weight: bold;">Yansong Ning</span>, Rui Liu, Jun Wang, Kai Chen, Wei Li, Jun Fang, Kan Zheng, Naiqiang Tan, Hao Liu</p>
+            <p> <span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2509.21842">[Paper]</a><a style="color: red;"> Beta Deployment on DiDi Chuxing</a></span></p>
+        </div>
+        </div>
+  </span>
+  <span class="d-block d-lg-none">
+    
+      <div>
+            <p><span style="font-weight: bold;"><a href="arxiv.org">[Preprint] </a></span><span style="font-weight: bold;">Yansong Ning</span>, Rui Liu, Jun Wang, Kai Chen, Wei Li, Jun Fang, Kan Zheng, Naiqiang Tan, Hao Liu. <span style="font-weight: bold;">DeepTravel: An End-to-End Agentic Reinforcement Learning Framework for Autonomous Travel Planning Agents. </span><span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2509.21842">[Paper]</a> <a style="color: red;"> Beta Deployment on DiDi Chuxing</a></span><br></p>
+
+        </div>
+      </span>
+</div>
+
+<!-- UrbanKGent Project -->
+<div class="resume-item d-flex flex-column flex-md-row mb-5 research-project" data-category="graph-modeling">
 <span class="d-none d-lg-block">
           <div class="d-flex">
           <img src="./img/UrbanKGent.png" alt="Description of image" style="width: 40%; height: auto; margin-right: 20px;">
@@ -250,24 +342,6 @@
           </div></span>
 </div>
 
-<div class="resume-item d-flex flex-column flex-md-row mb-5 research-project" data-category="llm-agent">
-<span class="d-none d-lg-block">
-          <div class="d-flex">
-          <img src="./img/UrbanLLMAgent.png" alt="Description of image" style="width: 40%; height: auto; margin-right: 20px;">
-          <div>
-              <p style="font-size: x-large;"><span style="font-weight: bold;">Large Language Model Powered Intelligent Urban Agents: Concepts, Capabilities, and Applications</span><br></p>
-              <p><span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2507.00914">Preprint</a></span><br>
-              Jindong Han, <span style="font-weight: bold;">Yansong Ning</span>, Zirui Yuan, Hang Ni, Fan Liu, Tengfei Lyu, Hao Liu</p>
-              <p> <span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2507.00914">[Paper]</a> <a href="https://github.com/usail-hkust/Awesome-Urban-LLM-Agents">[GitHub]</a> </span></p>
-          </div>
-
-          </div>
-    </span>
-    <span class="d-block d-lg-none"><div>
-              <p><span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2507.00914">[Preprint]</a></span> Jindong Han, <span style="font-weight: bold;">Yansong Ning</span>, Zirui Yuan, Hang Ni, Fan Liu, Tengfei Lyu, Hao Liu. <span style="font-weight: bold;">Large Language Model Powered Intelligent Urban Agents: Concepts, Capabilities, and Applications. <span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2507.00914">[Paper]</a> <a href="https://github.com/usail-hkust/Awesome-Urban-LLM-Agents">[GitHub]</a> </span><br></p>
-
-          </div></span>
-</div>
 
 <!-- UUKG Project -->
 <div class="resume-item d-flex flex-column flex-md-row mb-5 research-project" data-category="graph-modeling">
@@ -289,26 +363,6 @@
           </div></span>
 </div>
 
-<!-- Bkd-FedGNN Project -->
-<div class="resume-item d-flex flex-column flex-md-row mb-5 research-project" data-category="graph-modeling">
-    <span class="d-none d-lg-block">
-          <div class="d-flex">
-          <img src="./img/BkdFedGNN.png" alt="Description of image" style="width: 40%; height: auto; margin-right: 20px;">
-          <div>
-              <p style="font-size: x-large;"><span style="font-weight: bold;">Bkd-FedGNN: A Benchmark for Classification Backdoor Attacks on Federated Graph Neural Network</span><br></p>
-              <p><span style="font-weight: bold;"><a href="https://arxiv.org/">ECML PKDD 2025</a></span><br>
-              Fan Liu, Siqi Lai, <span style="font-weight: bold;">Yansong Ning</span>, Hao Liu</p>
-              <p> <span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2306.10351">[Paper]</a> <a href="https://github.com/usail-hkust/BkdFedGCN">[Code]</a></span></p>
-          </div>
-          </div>
-    </span>
-    <span class="d-block d-lg-none">
-        <div>
-              <p><span style="font-weight: bold;"><a href="https://arxiv.org/">[ECML PKDD 2025] </a></span>Fan Liu, Siqi Lai, <span style="font-weight: bold;">Yansong Ning</span>, Hao Liu. <span style="font-weight: bold;">Bkd-FedGNN: A Benchmark for Classification Backdoor Attacks on Federated Graph Neural Network. </span><span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2306.10351">[Paper]</a> <a href="https://github.com/usail-hkust/BkdFedGCN">[Code]</a></span><br></p>
-
-          </div>
-        </span>
-</div>
 
 <!-- Long⊗Short Project -->
 <div class="resume-item d-flex flex-column flex-md-row mb-5 research-project" data-category="llm-reasoning">
@@ -352,28 +406,90 @@
         </span>
 </div>
 
-<!-- FedSODA Project -->
-<div class="resume-item d-flex flex-column flex-md-row mb-5 research-project" data-category="llm-reasoning">
-    <span class="d-none d-lg-block">
-          <div class="d-flex">
-          <img src="./img/FedSODA.png" alt="Description of image" style="width: 40%; height: auto; margin-right: 20px;">
-          <div>
-              <p style="font-size: x-large;"><span style="font-weight: bold;">FedSODA: Federated Fine-tuning of LLMs via Similarity Group Pruning and Orchestrated Distillation Alignment</span><br></p>
-              <p><span style="font-weight: bold;"><a href="https://yasning.github.io/homepage/">ECAI 2025</a></span><br>
-              Manning Zhu, Songtao Guo, Pengzhan Zhou, <span style="font-weight: bold;">Yansong Ning</span>, Chang Han, Dewen Qiao</p>
-              <p> <span style="font-weight: bold;"><a href="https://yasning.github.io/homepage/">[Paper]</a>  </span></p>
-          </div>
-          </div>
-    </span>
-    <span class="d-block d-lg-none">
-        <div>
-              <p><span style="font-weight: bold;"><a href="https://yasning.github.io/homepage/">[ECAI 2025] </a></span>Manning Zhu, Songtao Guo, Pengzhan Zhou, <span style="font-weight: bold;">Yansong Ning</span>, Chang Han, Dewen Qiao. <span style="font-weight: bold;">FedSODA: Federated Fine-tuning of LLMs via Similarity Group Pruning and Orchestrated Distillation Alignment. </span><span style="font-weight: bold;"><a href="https://yasning.github.io/homepage/">[Paper]</a> </span><br></p>
 
-          </div>
-        </span>
-</div>
 
 </section>
+
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="publications">
+    <div class="my-auto">
+        <h2 class="mb-3">Publications And Manuscripts</h2>
+                 <div class="subheading mb-0">
+              <span style="font-weight: bold;">
+            <a>Publications</a><br>
+                  </span>
+          </div>
+
+        <div class="publications-list">
+            <ul class="fa-ul mb-0">
+                <li class="publication-item">
+                    <i class="fa-li fa fa-file-text text-warning"></i>
+                    <span style="font-weight: bold;">[KDD 2025] Yansong Ning</span>, Shuowei Cai, Wei Li, Jun Fang, Naiqiang Tan, Hua Chai and Hao Liu.<span style="font-weight: bold;"> <a href="https://dl.acm.org/doi/10.1145/3711896.3737208">DiMA: An LLM-Powered Ride-Hailing Assistant at DiDi.</a> </span> In Proceedings of the 31st SIGKDD Conference on Knowledge Discovery and Data Mining, Toronto, ON, Canada, 2025.<br>
+                </li>
+<li class="publication-item">
+                    <i class="fa-li fa fa-file-text text-warning"></i>
+<span style="font-weight: bold;">[NeurIPS 2024] Yansong Ning</span>, Hao Liu. <span style="font-weight: bold;"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/decd42d78c42cea59c95c7c3d40d5e0f-Abstract-Conference.html">UrbanKGent: A Unified Large Language Model Agent Framework for Urban Knowledge Graph Construction.</a></span>  In Proceedings of the Thirty-eighth Annual Conference on Neural Information Processing Systems, Vancouver, Canada, 2024.<br>
+                </li>
+                <li class="publication-item">
+                                   <i class="fa-li fa fa-file-text text-warning"></i>
+<span style="font-weight: bold;">[NeurIPS 2023] Yansong Ning</span>, Hao Liu, Hao Henry Wang, Zhenyu Zeng, Hui Xiong. <span style="font-weight: bold;"><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/c4a30a4dd840cfeff30ba4d2661ff097-Abstract-Datasets_and_Benchmarks.html">UUKG: Unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction.</a></span> In Proceedings of the Thirty-seventh Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track, New Orleans, USA, 2023.<br>
+                </li> 
+                <li class="publication-item">
+                                   <i class="fa-li fa fa-file-text text-warning"></i>
+<span style="font-weight: bold;">[ECML-PKDD 2025]</span> Fan Liu, Siqi Lai, <span style="font-weight: bold;">Yansong Ning</span> and Hao Liu. <span style="font-weight: bold;"><a href="https://yasning.github.io/homepage/">Bkd-FedGNN: A Benchmark for Classification Backdoor Attacks on Federated Graph Neural Network.</a></span> In Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases 2025, Porto, Portugal, 2025.<br>
+                </li> 
+
+               <li class="publication-item">
+                                   <i class="fa-li fa fa-file-text text-warning"></i>
+<span style="font-weight: bold;">[ECAI 2025]</span> Manning Zhu, Songtao Guo, Pengzhan Zhou, <span style="font-weight: bold;">Yansong Ning</span>, Chang Han and Dewen Qiao.  and Hao Liu. <span style="font-weight: bold;"><a href="https://yasning.github.io/homepage/">FedSODA: Federated Fine-tuning of LLMs via Similarity Group Pruning and Orchestrated Distillation Alignment.</a></span> In Proceedings of European Conference on Artificial Intelligence 2025, Bologna, Italy, 2025.<br>
+                </li> 
+            </ul>
+        </div>
+        <div class="subheading mb-0">
+              <span style="font-weight: bold;">
+            <a>Preprints</a><br>
+                  </span>
+          </div>
+          <div class="publications-list">
+            <ul class="fa-ul mb-0">
+                <li class="publication-item">
+                    <i class="fa-li fa fa-file-text text-warning"></i>
+                    <span style="font-weight: bold;">[arXiv] Yansong Ning</span>, Rui Liu, Jun Wang, Kai Chen, Wei Li, Jun Fang, Kan Zheng, Naiqiang Tan, Hao Liu.<span style="font-weight: bold;"> <a href="https://arxiv.org/pdf/2509.21842">DeepTravel: An End-to-End Agentic Reinforcement Learning Framework for Autonomous Travel Planning Agents.</a></span> 2025.<br>
+                </li>
+                <li class="publication-item">
+                    <i class="fa-li fa fa-file-text text-warning"></i>
+                    <span style="font-weight: bold;">[arXiv] Yansong Ning</span>, Wei Li, Jun Fang, Naiqiang Tan, Hao Liu.<span style="font-weight: bold;"> <a href="https://arxiv.org/pdf/2505.11827">Not All Thoughts are Generated Equal: Efficient LLM Reasoning via Multi-Turn Reinforcement Learning.</a></span> 2025.<br>
+                </li>
+                <li class="publication-item">
+                    <i class="fa-li fa fa-file-text text-warning"></i>
+                    <span style="font-weight: bold;">[arXiv]</span> Siqi Lai,<span style="font-weight: bold;"> Yansong Ning</span>, Zirui Yuan, Zhixi Chen, Hao Liu.<span style="font-weight: bold;"> <a href="https://www.arxiv.org/pdf/2505.17572">USTBench: Benchmarking and Dissecting Spatiotemporal Reasoning of LLMs as Urban Agents.</a></span> 2025.<br>
+                </li>
+                                <li class="publication-item">
+                    <i class="fa-li fa fa-file-text text-warning"></i>
+                    <span style="font-weight: bold;">[arXiv]</span> Jindong Han,<span style="font-weight: bold;"> Yansong Ning</span>, Zirui Yuan, Hang Ni, Fan Liu, Tengfei Lyu, Hao Liu.<span style="font-weight: bold;"> <a href="https://www.arxiv.org/pdf/2505.17572">Large Language Model Powered Intelligent Urban Agents: Concepts, Capabilities, and Applications.</a></span> 2025.<br>
+                </li>
+    </div>
+</section>
+
+<style>
+.publications-list {
+    margin-top: 20px;
+}
+
+.publication-item {
+    margin-bottom: 20px;
+}
+
+.pub-link {
+    color: #BD5D38;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.pub-link:hover {
+    text-decoration: underline;
+}
+</style>
 
 <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
     <div class="my-auto">
@@ -381,13 +497,13 @@
               <ul class="fa-ul mb-0">
                 <li>
                   <i class="fa-li fa fa-graduation-cap text-warning"></i>
-                  Sep 2025 - Present, <span style="font-weight: bold;">The Hong Kong University of Science and Technology (Guangzhou)</span><br>
+                  Sep 2025 - Present, <span style="font-weight: bold;">The Hong Kong University of Science and Technology</span><br>
                   Doctor of Philosophy in Artificial Intelligence<br>
                   Supervisor: <span style="font-weight: bold;"><a href="https://raymondhliu.github.io/">Prof. Hao Liu</a></span> </span>
                 </li>
                 <li>
                   <i class="fa-li fa fa-graduation-cap text-warning"></i>
-                  Sep 2023 - Jun 2025, <span style="font-weight: bold;">The Hong Kong University of Science and Technology (Guangzhou)</span><br>
+                  Sep 2023 - Jun 2025, <span style="font-weight: bold;">The Hong Kong University of Science and Technology</span><br>
                   Master of Philosophy in Artificial Intelligence<br>
                   Supervisor: <span style="font-weight: bold;"><a href="https://raymondhliu.github.io/">Prof. Hao Liu</a></span> & <span style="font-weight: bold;"><a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en">Prof. Hui Xiong</a></span>
                 </li>
@@ -411,9 +527,10 @@
               </ul>
     </div>
     <div class="my-auto">
-              <h2 class="mb-3" id="services">Services</h2>
+              <h2 class="mb-3" id="services">Teaching/Conference Services</h2>
+              <p><span style="font-weight: bold;">Teaching Assistant:</span> AIAA 3111: Introduction to Data Mining (Spring, 2025)</p>
               <p><span style="font-weight: bold;">Session Chair:</span> KDD'2025</p>
-              <p><span style="font-weight: bold;">Reviewer:</span> NeurIPS'2024'2025, ICLR'2025, ICML'2025</p>
+              <p><span style="font-weight: bold;">Reviewer:</span> NeurIPS'2024'2025, ICLR'2025'2026, ICML'2025, KDD'2026</p>
      </div>
 
       <div class="my-auto">
