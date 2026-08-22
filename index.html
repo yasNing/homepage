@@ -145,7 +145,7 @@
           </span>
             <p class="mb-3">
             <span style="font-weight: bold;">
-                His recent research focuses on <a href="https://yasning.github.io/homepage/">reasoning LLMs and agent</a>. Specifically, his research goal is to understand and improve the "agentic reasoning capability" of LLMs (automatically plan, execute external tools, and reflect on tool responses to explore, verify, and refine intermediate actions in multi-step reasoning process), guaranteeing their practical applicability in real-world deployment, e.g., optimizing agent to satisfy user's objectives via multiturn interaction.</p>
+                His recent research focuses on <a href="https://yasning.github.io/homepage/">multimodal agents, efficient reasoning LLMs/agents</a>. Specifically, his research goal is to understand and improve the "agentic reasoning capability" of LLMs (automatically plan, execute external tools, and reflect on tool responses to explore, verify, and refine intermediate actions in multi-step reasoning process), guaranteeing their practical applicability in real-world deployment, e.g., optimizing agent to satisfy user's objectives via multiturn interaction.</p>
           </span>
             <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
@@ -200,14 +200,17 @@
         <span style="font-weight: bold;">
             <!-- 前5条消息 - 始终显示 -->
             <span class="always-visible">
+                [Aug 2026] Pleasure to release <a href="https://arxiv.org/pdf/2608.15265">VibeWorlding</a>, a unified framework for benchmarking and training <a href="https://github.com/usail-hkust/VibeWorlding-Gym">multimodal agents</a> to construct 3D open worlds end-to-end, in collaboration with <a href="https://www.tencent.com/en-us/">Tencent</a>.<br>
+                [Aug 2026] One paper was accepted to <a href="https://2026.emnlp.org/">EMNLP 2026</a> as a <span style="font-weight: bold;">Main Conference</span> paper, about <a href="https://arxiv.org/pdf/2505.11827">efficient LLM reasoning via multi-turn reinforcement learning</a>.<br>
+                [Jun 2026] Honored to receive the <span style="font-weight: bold;">Rising Star Award</span> from HKUST(GZ) AI Thrust, 2026.<br>
                 [May 2026] Three papers were accepted to <a href="https://icml.cc/Conferences/2026">ICML 2026</a> and <a href="https://kdd2026.kdd.org/">KDD 2026</a>, leveraging agentic RL to build <a href="https://arxiv.org/pdf/2602.04284">efficient agents</a>, <a href="https://arxiv.org/pdf/2509.21842">travel planning</a> and <a href="https://yasning.github.io/homepage/">data science</a> agent.<br>
-                [Mar 2026] I'm honored to join in <a href="https://giinex.tencent.com/#/index">Tencent</a> as a research intern (Qingyun Project). I will focus on Multimodal Large Language Models (MLLMs) and MLLM-powered agents. My research aims to leverage agentic reinforcement learning to enhance agent capabilities in scene/world generation, with a critical application focus on the gaming domain.<br>
-                [Feb 2026] Pleasure to release <a href="https://arxiv.org/pdf/2602.04284">Agent-Omit</a>, a unified agentic RL framework for buidling efficient LLM agent, capable of adaptively omit thought and observation in multi-turn reasoning process.<br>
-                [Jan 2026] One paper was accepted to <a href="https://www.arxiv.org/pdf/2505.17572">ICLR 2026</a>, about understanding the spatiotemporal reasoning capability in LLMs. Congrates to my co-author!<br>
       </span>
 
             <!-- 其余消息 - 可折叠 -->
             <span id="collapsible-news" class="collapsible-content">
+                [Mar 2026] I'm honored to join in <a href="https://giinex.tencent.com/#/index">Tencent</a> as a research intern (Qingyun Project). I will focus on Multimodal Large Language Models (MLLMs) and MLLM-powered agents. My research aims to leverage agentic reinforcement learning to enhance agent capabilities in scene/world generation, with a critical application focus on the gaming domain.<br>
+                [Feb 2026] Pleasure to release <a href="https://arxiv.org/pdf/2602.04284">Agent-Omit</a>, a unified agentic RL framework for buidling efficient LLM agent, capable of adaptively omit thought and observation in multi-turn reasoning process.<br>
+                [Jan 2026] One paper was accepted to <a href="https://www.arxiv.org/pdf/2505.17572">ICLR 2026</a>, about understanding the spatiotemporal reasoning capability in LLMs. Congrates to my co-author!<br>
                 [Sep 2025] Pleasure to release <a href="https://arxiv.org/pdf/2509.21842">DeepTravel</a>, an end-to-end agentic reinforcement learning framework for building autonomous travel agent!!<br>
                 [Jul 2025] Two papers were accepted to <a href="https://yasning.github.io/homepage/">ECML-PKDD</a> and <a href="https://yasning.github.io/homepage/">ECAI</a>, about <a href="https://arxiv.org/pdf/2306.10351">Federated Graph Learning</a> and <a href="https://yasning.github.io/homepage/">Federated Fine-tuning</a>! Congrates to my co-author!<br>
                 [May 2025] Thrilled to release <a href="https://arxiv.org/pdf/2505.11827">Long⊗Short</a>, an efficient reasoning framework that enables two LLMs to collaboratively solve the problem. Feel free to use our released <a href="https://huggingface.co/datasets/yasNing/OpenMath-ThoughtChunk1.8K">OpenMath-ThoughtChunk1.8K</a> on Hugging Face for thought-level reasoning analysis!!</a><br>
@@ -291,6 +294,7 @@ function toggleNews() {
           <div class="category-buttons">
             <button class="btn btn-primary active" data-category="llm-agent">Real-World LLM Agents Deployment</button>
             <button class="btn btn-primary" data-category="efficient-reasoning">Efficient Reasoning LLMs/Agents</button>
+            <button class="btn btn-primary" data-category="multimodal-agents">Multimodal Agents</button>
             <button class="btn btn-primary" data-category="graph-modeling">Knowledge Graph</button>
           </div>
 
@@ -408,8 +412,8 @@ function toggleNews() {
           <div class="d-flex">
           <img src="./img/LongShort.png" alt="Description of image" style="width: 40%; height: auto; margin-right: 20px;">
           <div>
-              <p style="font-size: x-large;"><span style="font-weight: bold;">Not All Thoughts are Generated Equal: Efficient LLM Reasoning via Multi-Turn Reinforcement Learning</span><br></p>
-              <p><span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2505.11827">Preprint</a></span><br>
+            <p style="font-size: x-large;"><span style="font-weight: bold;">Not All Thoughts are Generated Equal: Efficient LLM Reasoning via Synergizing-Oriented Multi-Turn Reinforcement Learning</span><br></p>
+            <p><span style="font-weight: bold;"><a href="https://2026.emnlp.org/">EMNLP 2026</a></span><br>
               <span style="font-weight: bold;">Yansong Ning</span>, Wei Li, Jun Fang, Naiqiang Tan, Hao Liu</p>
               <p> <span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2505.11827">[Paper]</a> <a href="https://github.com/yasNing/Long-otimes-Short/">[Code]</a> <a href="https://huggingface.co/datasets/yasNing/OpenMath-ThoughtChunk1.8K">[Data]</a></span></p>
           </div>
@@ -417,10 +421,32 @@ function toggleNews() {
     </span>
     <span class="d-block d-lg-none">
         <div>
-              <p><span style="font-weight: bold;"><a href="https://arxiv.org/">[Preprint] </a></span><span style="font-weight: bold;">Yansong Ning</span>, Wei Li, Jun Fang, Naiqiang Tan, Hao Liu. <span style="font-weight: bold;">Not All Thoughts are Generated Equal: Efficient LLM Reasoning via Multi-Turn Reinforcement Learning. </span><span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2505.11827">[Paper]</a> <a href="https://github.com/yasNing/Long-otimes-Short/">[Code]</a> <a href="https://huggingface.co/datasets/yasNing/OpenMath-ThoughtChunk1.8K">[Data]</a></span><br></p>
+              <p><span style="font-weight: bold;"><a href="https://2026.emnlp.org/">[EMNLP 2026] </a></span><span style="font-weight: bold;">Yansong Ning</span>, Wei Li, Jun Fang, Naiqiang Tan, Hao Liu. <span style="font-weight: bold;">Not All Thoughts are Generated Equal: Efficient LLM Reasoning via Synergizing-Oriented Multi-Turn Reinforcement Learning. </span><span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2505.11827">[Paper]</a> <a href="https://github.com/yasNing/Long-otimes-Short/">[Code]</a> <a href="https://huggingface.co/datasets/yasNing/OpenMath-ThoughtChunk1.8K">[Data]</a></span><br></p>
 
           </div>
         </span>
+</div>
+
+
+<!-- VibeWorlding Project -->
+<div class="resume-item d-flex flex-column flex-md-row mb-5 research-project" data-category="multimodal-agents">
+  <span class="d-none d-lg-block">
+        <div class="d-flex">
+        <img src="./img/VibeWorlding.png" alt="Description of image" style="width: 40%; height: auto; margin-right: 20px;">
+        <div>
+            <p style="font-size: x-large;"><span style="font-weight: bold;">VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?</span><br></p>
+            <p><span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2608.15265">Preprint</a></span><br>
+            <span style="font-weight: bold;">Yansong Ning</span>, Jingwen Ye, Zhongkai Wu, Yang Sun, Yiqin Zhu, Xingyi Li, Weidong Zhang, Hao Liu</p>
+            <p> <span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2608.15265">[Paper]</a><a href="https://github.com/usail-hkust/VibeWorlding-Gym">[Code]</a><a href="https://usail-hkust.github.io/VibeWorlding-Gym/">[Project]</a><a style="color: red;"> In collaboration with Tencent</a></span></p>
+        </div>
+        </div>
+  </span>
+  <span class="d-block d-lg-none">
+      <div>
+            <p><span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2608.15265">[Preprint] </a></span><span style="font-weight: bold;">Yansong Ning</span>, Jingwen Ye, Zhongkai Wu, Yang Sun, Yiqin Zhu, Xingyi Li, Weidong Zhang, Hao Liu. <span style="font-weight: bold;">VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End? </span><span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2608.15265">[Paper]</a> <a href="https://github.com/usail-hkust/VibeWorlding-Gym">[Code]</a> <a href="https://usail-hkust.github.io/VibeWorlding-Gym/">[Project]</a><a style="color: red;"> In collaboration with Tencent</a></span><br></p>
+
+        </div>
+      </span>
 </div>
 
 
@@ -438,6 +464,10 @@ function toggleNews() {
 
         <div class="publications-list">
             <ul class="fa-ul mb-0">
+                <li class="publication-item">
+                    <i class="fa-li fa fa-file-text text-icon-gray"></i>
+                    <span style="font-weight: bold;">[EMNLP 2026] Yansong Ning</span>, Wei Li, Jun Fang, Naiqiang Tan, Hao Liu.<span style="font-weight: bold;"> <a href="https://arxiv.org/pdf/2505.11827">Not All Thoughts are Generated Equal: Efficient LLM Reasoning via Synergizing-Oriented Multi-Turn Reinforcement Learning.</a></span> In Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing, Budapest, Hungary, 2026.<br>
+                </li>
                 <li class="publication-item">
                     <i class="fa-li fa fa-file-text text-icon-gray"></i>
                     <span style="font-weight: bold;">[ICML 2026] Yansong Ning</span>, Jun Fang, Naiqiang Tan, Hao Liu.<span style="font-weight: bold;"> <a href="https://arxiv.org/pdf/2602.04284">Agent-Omit: Adaptive Context Omission for Efficient LLM Agents.</a></span> In Proceedings of the 43rd International Conference on Machine Learning, Seoul, South Korea, 2026.<br>
@@ -485,11 +515,11 @@ function toggleNews() {
             <ul class="fa-ul mb-0">
                 <li class="publication-item">
                     <i class="fa-li fa fa-file-text text-icon-gray"></i>
-                    <span style="font-weight: bold;">[arXiv] Yansong Ning</span>, Mianpeng Liu, Jingwen Ye, Weidong Zhang, Hao Liu.<span style="font-weight: bold;"> <a href="https://arxiv.org/pdf/2605.28398">HRBench: Benchmarking and Understanding Thinking-Mode Switch Strategies in Hybrid-Reasoning LLMs.</a></span> 2026.<br>
+                    <span style="font-weight: bold;">[arXiv] Yansong Ning</span>, Jingwen Ye, Zhongkai Wu, Yang Sun, Yiqin Zhu, Xingyi Li, Weidong Zhang, Hao Liu.<span style="font-weight: bold;"> <a href="https://arxiv.org/pdf/2608.15265">VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?</a></span> 2026.<br>
                 </li>
                 <li class="publication-item">
                     <i class="fa-li fa fa-file-text text-icon-gray"></i>
-                    <span style="font-weight: bold;">[arXiv] Yansong Ning</span>, Wei Li, Jun Fang, Naiqiang Tan, Hao Liu.<span style="font-weight: bold;"> <a href="https://arxiv.org/pdf/2505.11827">Not All Thoughts are Generated Equal: Efficient LLM Reasoning via Multi-Turn Reinforcement Learning.</a></span> 2025.<br>
+                    <span style="font-weight: bold;">[arXiv] Yansong Ning</span>, Mianpeng Liu, Jingwen Ye, Weidong Zhang, Hao Liu.<span style="font-weight: bold;"> <a href="https://arxiv.org/pdf/2605.28398">HRBench: Benchmarking and Understanding Thinking-Mode Switch Strategies in Hybrid-Reasoning LLMs.</a></span> 2026.<br>
                 </li>
                                             <li class="publication-item">
                     <i class="fa-li fa fa-file-text text-icon-gray"></i>
@@ -576,7 +606,7 @@ function toggleNews() {
               <p><span style="font-weight: bold;">Session Chair:</span> KDD'2025</p>
               <p><span style="font-weight: bold;">Reviewer:</span></p>
               <ul>
-                <li>Conference: NeurIPS'2024'2025, ICLR'2025'2026, ICML'2025'2026, KDD'2026</li>
+                <li>Conference: NeurIPS'2024'2025, ICLR'2025'2026, ICML'2025'2026, ACL ARR'2026, KDD'2026'2027, AAAI'2027</li>
                 <li>Journal: IEEE Transactions on Big Data, Frontiers of Computer Science</li>
               </ul>
      </div>
@@ -584,6 +614,9 @@ function toggleNews() {
       <div class="my-auto">
               <h2 class="mb-3" id="awards">Awards</h2>
               <ul class="fa-ul mb-0">
+                <li>
+                  <i class="fa-li fa fa-trophy text-icon-gray"></i>
+                  Rising Star Award, Artificial Intelligence Thrust, HKUST(GZ), 2026</li>
                 <li>
                   <i class="fa-li fa fa-trophy text-icon-gray"></i>
                   RBM Travel Grant, 2024</li>
