@@ -82,6 +82,19 @@
     .resume-item[style*="display: none"] {
         display: none !important;
     }
+
+
+    /* 内容区居中并限制宽度，左右留白 */
+    section.resume-section {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* 顺序滚动：各部分按内容高度自然排列，不再强制占满一屏 */
+    @media (min-width: 768px) {
+        section.resume-section { min-height: auto; }
+    }
 </style>
 
   </head>
@@ -130,14 +143,14 @@
 
     <div class="container-fluid p-0">
 
-<section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="about">
         <div class="my-auto">
           <h1 class="mb-0">Yansong Ning
           </h1>
           <p class="mb-3">
           <span style="font-weight: bold;">
-              Yansong is a second-year Ph.D. student in Artificial Intelligence Thrust at <a href="https://www.hkust-gz.edu.cn/">The Hong Kong University of Science and Technology</a>, Guangzhou Campus. He continued his postgraduate studies after completing an M.Phil. degree at HKUST(GZ) under the supervision of <a href="https://raymondhliu.github.io/">Prof. Hao Liu</a> and <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en">Prof. Hui Xiong</a>. 
-              Currently, he is a research intern (Qingyun Project) in the <a href="https://join.qq.com/qingyun.html/">Tencent</a>.
+              Yansong is a first-year Ph.D. student in Artificial Intelligence Thrust at <a href="https://www.hkust-gz.edu.cn/">The Hong Kong University of Science and Technology</a>, Guangzhou Campus. He continued his postgraduate studies after completing an M.Phil. degree at HKUST(GZ) under the supervision of <a href="https://raymondhliu.github.io/">Prof. Hao Liu</a> and <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en">Prof. Hui Xiong</a>. 
+              Currently, he is a research intern (Qingyun Project) at <a href="https://hunyuan.tencent.com/">Tencent Hunyuan</a>.
               Prior to that, he obtained his Bachelor's degree in the School of Data Science at <a href="https://www.tyut.edu.cn/">TYUT</a>.
               He also interned at L Lab of Didi Chuxing, facilitating the deployment of <a href="https://www.qbitai.com/2025/09/338683.html">"AI Xiaodi"</a>.
               During undergraduate studies, he also interned at Guangzhou HKUST FYTRI, collaborating with <a href="https://www.alibabacloud.com/en/campaign/mnc-overview?_p_lc=1/">Alibaba Cloud Intelligence Group</a>.
@@ -208,7 +221,6 @@
 
             <!-- 其余消息 - 可折叠 -->
             <span id="collapsible-news" class="collapsible-content">
-                [Mar 2026] I'm honored to join in <a href="https://giinex.tencent.com/#/index">Tencent</a> as a research intern (Qingyun Project). I will focus on Multimodal Large Language Models (MLLMs) and MLLM-powered agents. My research aims to leverage agentic reinforcement learning to enhance agent capabilities in scene/world generation, with a critical application focus on the gaming domain.<br>
                 [Feb 2026] Pleasure to release <a href="https://arxiv.org/pdf/2602.04284">Agent-Omit</a>, a unified agentic RL framework for buidling efficient LLM agent, capable of adaptively omit thought and observation in multi-turn reasoning process.<br>
                 [Jan 2026] One paper was accepted to <a href="https://www.arxiv.org/pdf/2505.17572">ICLR 2026</a>, about understanding the spatiotemporal reasoning capability in LLMs. Congrates to my co-author!<br>
                 [Sep 2025] Pleasure to release <a href="https://arxiv.org/pdf/2509.21842">DeepTravel</a>, an end-to-end agentic reinforcement learning framework for building autonomous travel agent!!<br>
@@ -415,13 +427,13 @@ function toggleNews() {
             <p style="font-size: x-large;"><span style="font-weight: bold;">Not All Thoughts are Generated Equal: Efficient LLM Reasoning via Synergizing-Oriented Multi-Turn Reinforcement Learning</span><br></p>
             <p><span style="font-weight: bold;"><a href="https://2026.emnlp.org/">EMNLP 2026</a></span><br>
               <span style="font-weight: bold;">Yansong Ning</span>, Wei Li, Jun Fang, Naiqiang Tan, Hao Liu</p>
-              <p> <span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2505.11827">[Paper]</a> <a href="https://github.com/usail-hkust/LongShort">[Code]</a> <a href="https://huggingface.co/datasets/yasNing/OpenMath-ThoughtChunk1.8K">[Data]</a></span></p>
+              <p> <span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2505.11827">[Paper]</a> <a href="https://github.com/yasNing/Long-otimes-Short/">[Code]</a> <a href="https://huggingface.co/datasets/yasNing/OpenMath-ThoughtChunk1.8K">[Data]</a></span></p>
           </div>
           </div>
     </span>
     <span class="d-block d-lg-none">
         <div>
-              <p><span style="font-weight: bold;"><a href="https://2026.emnlp.org/">[EMNLP 2026] </a></span><span style="font-weight: bold;">Yansong Ning</span>, Wei Li, Jun Fang, Naiqiang Tan, Hao Liu. <span style="font-weight: bold;">Not All Thoughts are Generated Equal: Efficient LLM Reasoning via Synergizing-Oriented Multi-Turn Reinforcement Learning. </span><span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2505.11827">[Paper]</a> <a href="https://github.com/usail-hkust/LongShort">[Code]</a> <a href="https://huggingface.co/datasets/yasNing/OpenMath-ThoughtChunk1.8K">[Data]</a></span><br></p>
+              <p><span style="font-weight: bold;"><a href="https://2026.emnlp.org/">[EMNLP 2026] </a></span><span style="font-weight: bold;">Yansong Ning</span>, Wei Li, Jun Fang, Naiqiang Tan, Hao Liu. <span style="font-weight: bold;">Not All Thoughts are Generated Equal: Efficient LLM Reasoning via Synergizing-Oriented Multi-Turn Reinforcement Learning. </span><span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2505.11827">[Paper]</a> <a href="https://github.com/yasNing/Long-otimes-Short/">[Code]</a> <a href="https://huggingface.co/datasets/yasNing/OpenMath-ThoughtChunk1.8K">[Data]</a></span><br></p>
 
           </div>
         </span>
@@ -584,7 +596,7 @@ function toggleNews() {
                   <div style="width: 120px; min-width: 120px; text-align: center; margin-right: 20px;">
                     <img src="./img/tencent.png" alt="Tencent" style="max-width: 100%; height: auto;">
                   </div>
-                  <div>Mar 2026 - Present, Research Intern (Qingyun Project), AIPD, <span style="font-weight: bold;"><a href="https://www.tencent.com/en-us/">Tencent.</a></span></div>
+                  <div>Mar 2026 - Present, Research Intern (Qingyun Project), <span style="font-weight: bold;"><a href="https://hunyuan.tencent.com/">Tencent Hunyuan.</a></span></div>
                 </li>
                 <li style="display: flex; align-items: center; margin-bottom: 15px;">
                   <div style="width: 120px; min-width: 120px; text-align: center; margin-right: 20px;">
